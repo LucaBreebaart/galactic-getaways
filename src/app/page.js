@@ -1,6 +1,8 @@
 import "./(css)/space.css"
 import Link from "next/link";
 
+import { ContactUs } from "./(client)/contactUs";
+
 export default function Home() {
   return (
     <body className="body">
@@ -75,14 +77,9 @@ export default function Home() {
         </div>
       </div>
       <div className="footer-section">
-        <div className="contact-container">
-          <div className="contact-heading">Subscribe to stay updated</div>
-          <div className="contact-wrapper">
-            <input className="input-field"></input>
-            <input className="input-field"></input>
-            <div className="secondary-btn">Subscribe</div>
-          </div>
-        </div>
+        
+        <ContactUs></ContactUs>
+
         <div className="footer-container">
           <div className="footer-left-wrapper"><img src="images/Logo.png" loading="lazy" alt=""></img>
             <div className="footer-t">Luca Breebaart <span className="footer-t bold">  ©    2024</span></div>
